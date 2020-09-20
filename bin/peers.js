@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // import
 
 const {exec} = require('promisify-child-process');
