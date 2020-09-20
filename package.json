@@ -1,10 +1,13 @@
 {
-  "name": "@arc/eslint",
+  "name": "@sitearcade/eslint-config-arcade",
   "version": "0.0.1",
   "private": true,
   "main": "index.js",
   "bin": {
     "install-eslint-peers": "./bin/peers.js"
+  },
+  "scripts": {
+    "postversion": "git push origin --all; git push origin --tags"
   },
   "dependencies": {
     "find-config": "^1",
