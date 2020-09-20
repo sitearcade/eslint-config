@@ -19,7 +19,7 @@ module.exports = {
     'jest/no-jasmine-globals': 1,
     'jest/no-jest-import': 1,
     'jest/no-large-snapshots': [1, {maxSize: 50}],
-    'jest/no-test-callback': 1,
+    'jest/no-done-callback': 1,
     'jest/no-test-prefixes': 2,
     'jest/no-test-return-statement': 1,
     'jest/no-truthy-falsy': 1,
