@@ -1,12 +1,25 @@
 {
   "name": "@sitearcade/eslint-config-arcade",
   "version": "0.1.2",
+  "description": "SiteArcade's eslint-config.",
+  "license": "MIT",
+  "homepage": "https://sitearcade.com",
+  "repository": "github:sitearcade/eslint-config-arcade",
+  "bugs": "https://github.com/sitearcade/eslint-config-arcade/issues",
+  "author": {
+    "name": "Mike Stop Continues",
+    "email": "mike@sitearcade.com",
+    "url": "https://sitearcade.com"
+  },
   "main": "index.js",
   "bin": {
     "install-eslint-peers": "./bin/peers.js"
   },
   "scripts": {
-    "postversion": "git push origin --all; git push origin --tags"
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo 'Seems fine...'"
   },
   "dependencies": {
     "find-config": "^1",
