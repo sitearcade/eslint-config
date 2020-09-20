@@ -49,17 +49,19 @@ const orderOpts = {
 
 // config
 
+const lernaDir = path.parse(find('lerna.json')).dir;
+
 const lernaParents = R.pipe(
   find.require,
   R.propOr([], 'packages'),
   // lists all packages...
-  R.map((loc) => globby.sync([loc, '!**/node_modules/**'], {
-    cwd: path.resolve(__dirname, '../../'),
+  R.map((loc) => globby.sync(loc, {
+    cwd: lernaDir,
     onlyDirectories: true,
     expandDirectories: false,
   })),
   R.flatten,
-  R.map((loc) => path.resolve(__dirname, '../../', loc)),
+  R.map((loc) => path.resolve(lernaDir, loc)),
   // reduces down to parent directories...
   R.map((loc) => loc.replace(/(\/|^)[^/]+$/, '')),
   R.uniq,

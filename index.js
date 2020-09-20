@@ -25,7 +25,7 @@ module.exports = {
     './preset/react-hooks.js',
     './preset/react.js',
     './preset/styled-components.js',
-  ],
+  ].map((loc) => path.resolve(__dirname, loc)),
 
   rules: {},
 
@@ -36,7 +36,7 @@ module.exports = {
       extends: [
         './preset/jest.js',
         './preset/jest-formatting.js',
-      ],
+      ].map((loc) => path.resolve(__dirname, loc)),
 
       rules: {
         'import/no-extraneous-dependencies': [
