@@ -2,6 +2,12 @@
 
 const path = require('path');
 
+const find = require('find-config');
+
+// config
+
+const lernaDir = path.parse(find('lerna.json') || '').dir;
+
 // export
 
 module.exports = {
@@ -41,7 +47,12 @@ module.exports = {
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
-          {packageDir: [process.cwd(), path.resolve(__dirname, '../jest')]},
+          {
+            packageDir: [
+              process.cwd(),
+              path.resolve(lernaDir, './tools/jest'),
+            ],
+          },
         ],
       },
     },

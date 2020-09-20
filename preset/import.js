@@ -49,7 +49,7 @@ const orderOpts = {
 
 // config
 
-const lernaDir = path.parse(find('lerna.json')).dir;
+const lernaDir = path.parse(find('lerna.json') || '').dir;
 
 const lernaParents = R.pipe(
   find.require,
