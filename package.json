@@ -12,6 +12,7 @@
   "dependencies": {
     "find-config": "^1",
     "globby": "^11",
+    "promisify-child-process": "^4",
     "ramda": "^0"
   },
   "devDependencies": {
