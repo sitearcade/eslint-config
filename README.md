@@ -12,7 +12,7 @@ Our very favorite eslint config.
 {
   "eslintConfig": {
     "extends": [
-      "@sitearcade/eslint-config-arcade"
+      "@sitearcade/eslint-config"
     ]
   }
 }
