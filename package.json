@@ -1,11 +1,11 @@
 {
   "name": "@sitearcade/eslint-config",
   "version": "0.2.0",
-  "description": "SiteArcade's eslint-config.",
+  "description": "SiteArcade's eslint configs.",
   "license": "MIT",
   "homepage": "https://sitearcade.com",
   "repository": "github:sitearcade/eslint-config",
-  "bugs": "https://github.com/sitearcade/eslint-config-arcade/issues",
+  "bugs": "https://github.com/sitearcade/eslint-config/issues",
   "author": {
     "name": "Mike Stop Continues",
     "email": "mike@sitearcade.com",
@@ -25,7 +25,7 @@
     "find-config": "^1",
     "globby": "^11",
     "promisify-child-process": "^4",
-    "ramda": "^0"
+    "ramda": "~0"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
