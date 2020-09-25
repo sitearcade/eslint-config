@@ -88,7 +88,7 @@ module.exports = {
     'func-names': [1, 'as-needed'],
     'func-style': [1, 'declaration', {allowArrowFunctions: true}],
     'function-call-argument-newline': [1, 'consistent'],
-    'function-paren-newline': [1, 'multiline'],
+    'function-paren-newline': [1, 'multiline-arguments'],
     'generator-star-spacing': [1, 'after'],
     'getter-return': [2, {allowImplicit: true}],
     'global-require': 0,
