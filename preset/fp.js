@@ -1,6 +1,6 @@
 // vars
 
-const allowedObjects = ['_', 'R', 'form', 'router', 'Router'];
+const allowedObjects = ['_', 'R', 'form', 'router', 'Router', 'git'];
 
 // export
 
