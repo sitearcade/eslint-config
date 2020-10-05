@@ -55,7 +55,10 @@ module.exports = {
       },
     },
     {
-      files: ['infra/cdk/**/*.{js,ts,jsx,tsx,mjs}'],
+      files: [
+        'cdk.{js,ts,jsx,tsx,mjs}',
+        '{class,model,stack,struct}/**/*.{js,ts,jsx,tsx,mjs}',
+      ],
 
       rules: {
         'fp/no-class': 0,
