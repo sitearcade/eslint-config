@@ -17,6 +17,13 @@ const wrapOpts = {
   prop: 'parens-new-line',
 };
 
+const sortProps = {
+  ignoreCase: true,
+  callbacksLast: true,
+  shorthandFirst: true,
+  reservedFirst: ['key', 'ref'],
+};
+
 // export
 
 module.exports = {
@@ -74,7 +81,7 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 1,
     'react/jsx-props-no-spreading': 0,
     'react/jsx-sort-default-props': [1, {ignoreCase: true}],
-    'react/jsx-sort-props': [1, {ignoreCase: true}],
+    'react/jsx-sort-props': [1, sortProps],
     'react/jsx-tag-spacing': [1, tagOpts],
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
