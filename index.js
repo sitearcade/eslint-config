@@ -37,15 +37,6 @@ module.exports = {
         './preset/jest.js',
         './preset/jest-formatting.js',
       ].map((loc) => path.resolve(__dirname, loc)),
-
-      rules: {
-        'import/no-extraneous-dependencies': [
-          'error',
-          {
-            packageDir: [process.cwd()],
-          },
-        ],
-      },
     },
     {
       files: ['**/*.story.{js,ts,jsx,tsx,mjs}'],
