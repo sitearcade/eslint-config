@@ -20,8 +20,7 @@ module.exports = {
     'babel/new-cap': 1,
     'babel/no-invalid-this': 2,
     // 'babel/no-unused-expressions': [1, {allowTaggedTemplates: true}],
-    // TODO: until pipeline-related bug is fixed...
-    'babel/no-unused-expressions': 0,
+    'babel/no-unused-expressions': 1,
     'babel/object-curly-spacing': [1, 'never'],
     'babel/quotes': [1, 'single', {avoidEscape: true}], // prefer backticks?
     'babel/semi': [1, 'always'],

@@ -268,7 +268,7 @@ module.exports = {
     'one-var': [1, 'never'],
     'one-var-declaration-per-line': 0,
     'operator-assignment': 0,
-    'operator-linebreak': [1, 'after', {overrides: {'|>': 'before'}}],
+    'operator-linebreak': [1, 'after'],
     'padded-blocks': [1, 'never'],
     'padding-line-between-statements': [1, ...paddingOpts],
     'prefer-arrow-callback': 1,
