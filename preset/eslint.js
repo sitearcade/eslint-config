@@ -245,7 +245,7 @@ module.exports = {
     'no-unsafe-negation': [2, {enforceForOrderingRelations: true}],
     'no-unused-expressions': 0, // babel
     'no-unused-labels': 1,
-    'no-unused-vars': [1, {vars: 'all', args: 'after-used'}],
+    'no-unused-vars': [1, {vars: 'all', args: 'after-used', ignoreRestSiblings: true}],
     'no-use-before-define': [2, {functions: false, variables: false}],
     'no-useless-call': 2,
     'no-useless-catch': 2,
