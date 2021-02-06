@@ -12,9 +12,6 @@
     "url": "https://www.sitearcade.com"
   },
   "main": "index.js",
-  "bin": {
-    "install-eslint-peers": "./bin/peers.js"
-  },
   "scripts": {
     "postpublish": "git push origin --all; git push origin --tags",
     "postversion": "npm publish --access public",
@@ -29,7 +26,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.12.13",
-    "babel-eslint": "^11.0.0-beta.2",
+    "@babel/eslint-parser": "^7.12.13",
     "eslint": "^7.19.0",
     "eslint-import-resolver-lerna": "^2.0.0",
     "eslint-plugin-babel": "^5.3.1",
@@ -43,13 +40,13 @@
     "eslint-plugin-lodash": "^7.1.0",
     "eslint-plugin-optimize-regex": "^1.2.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-ramda": "^3.0.0-beta.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
-    "babel-eslint": "11.0.0-beta.2",
+    "@babel/eslint-parser": "7.12.13",
     "eslint": "7.13.0",
     "eslint-import-resolver-lerna": "2.0.0",
     "eslint-plugin-babel": "5.3.1",
@@ -63,7 +60,7 @@
     "eslint-plugin-lodash": "7.1.0",
     "eslint-plugin-optimize-regex": "1.2.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-ramda": "2.5.1",
+    "eslint-plugin-ramda": "3.0.0-beta.1",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0"
   },
