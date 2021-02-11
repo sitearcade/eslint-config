@@ -31,6 +31,11 @@ module.exports = {
 
   overrides: [
     {
+      files: ['**/*.{ts,tsx}'],
+
+      extends: ['./preset/typescript.js'].map((loc) => path.resolve(__dirname, loc)),
+    },
+    {
       files: ['**/*.test.{js,ts,jsx,tsx,mjs}'],
 
       extends: [

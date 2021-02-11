@@ -27,6 +27,8 @@
   "peerDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/eslint-parser": "^7.12.13",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
     "eslint": "^7.19.0",
     "eslint-import-resolver-lerna": "^2.0.0",
     "eslint-plugin-babel": "^5.3.1",
@@ -42,11 +44,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-ramda": "^3.0.0-beta.1",
     "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.1.5"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
     "@babel/eslint-parser": "7.12.13",
+    "@typescript-eslint/eslint-plugin": "4.15.0",
+    "@typescript-eslint/parser": "4.15.0",
     "eslint": "7.13.0",
     "eslint-import-resolver-lerna": "2.0.0",
     "eslint-plugin-babel": "5.3.1",
@@ -62,7 +67,8 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-ramda": "3.0.0-beta.1",
     "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-react-hooks": "4.2.0"
+    "eslint-plugin-react-hooks": "4.2.0",
+    "typescript": "4.1.5"
   },
   "eslintConfig": {
     "extends": [
