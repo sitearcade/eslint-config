@@ -286,7 +286,7 @@ module.exports = {
     'quote-props': [1, 'consistent-as-needed'],
     'quotes': 0, // babel
     'radix': [2, 'as-needed'],
-    'require-atomic-updates': 2,
+    'require-atomic-updates': 0,
     'require-await': 0,
     'require-unicode-regexp': 0,
     'require-yield': 2,
