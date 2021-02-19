@@ -4,6 +4,36 @@ const R = require('ramda');
 
 const {rules: jsRules} = require('./eslint');
 
+// vars
+
+const namingOpts = [
+  {
+    selector: 'default',
+    format: ['camelCase'],
+    leadingUnderscore: 'forbid',
+    trailingUnderscore: 'forbid',
+  },
+
+  {
+    selector: 'function',
+    format: ['camelCase', 'PascalCase'],
+    leadingUnderscore: 'forbid',
+    trailingUnderscore: 'forbid',
+  },
+
+  {
+    selector: 'variable',
+    format: ['camelCase', 'UPPER_CASE'],
+    leadingUnderscore: 'forbid',
+    trailingUnderscore: 'forbid',
+  },
+
+  {
+    selector: 'typeLike',
+    format: ['PascalCase'],
+  },
+];
+
 // fns
 
 const extendRules = (tsRules) => Object.keys(tsRules).reduce((acc, tsRule) => {
@@ -61,6 +91,7 @@ module.exports = {
     'prefer-const': 1,
     'prefer-rest-params': 1,
     'prefer-spread': 1,
+    'spaced-comment': [2, 'always', {markers: ['/']}],
 
     // core - replacements
 
@@ -110,20 +141,20 @@ module.exports = {
     '@typescript-eslint/consistent-type-assertions': 2,
     '@typescript-eslint/consistent-type-definitions': 2,
     '@typescript-eslint/consistent-type-imports': 2,
-    '@typescript-eslint/explicit-function-return-type': 2,
+    '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 2,
-    '@typescript-eslint/explicit-module-boundary-types': 2,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/lines-between-class-members': 2,
     '@typescript-eslint/member-delimiter-style': 2,
     '@typescript-eslint/member-ordering': 2,
     '@typescript-eslint/method-signature-style': 2,
-    '@typescript-eslint/naming-convention': 2,
+    '@typescript-eslint/naming-convention': [2, namingOpts],
     '@typescript-eslint/no-base-to-string': 2,
     '@typescript-eslint/no-confusing-non-null-assertion': 2,
     '@typescript-eslint/no-confusing-void-expression': 2,
     '@typescript-eslint/no-dynamic-delete': 2,
     '@typescript-eslint/no-empty-interface': 2,
-    '@typescript-eslint/no-explicit-any': 2,
+    '@typescript-eslint/no-explicit-any': [2, {fixToUnknown: true}],
     '@typescript-eslint/no-extra-non-null-assertion': 2,
     '@typescript-eslint/no-extraneous-class': 2,
     '@typescript-eslint/no-floating-promises': 2,
@@ -162,7 +193,7 @@ module.exports = {
     '@typescript-eslint/prefer-namespace-keyword': 2,
     '@typescript-eslint/prefer-nullish-coalescing': 2,
     '@typescript-eslint/prefer-optional-chain': 2,
-    '@typescript-eslint/prefer-readonly-parameter-types': 2,
+    '@typescript-eslint/prefer-readonly-parameter-types': 0,
     '@typescript-eslint/prefer-readonly': 2,
     '@typescript-eslint/prefer-reduce-type-parameter': 2,
     '@typescript-eslint/prefer-regexp-exec': 2,
