@@ -1,5 +1,7 @@
 // import
 
+const R = require('ramda');
+
 const {rules: jsRules} = require('./eslint');
 
 // fns
@@ -9,10 +11,14 @@ const extendRules = (tsRules) => Object.keys(tsRules).reduce((acc, tsRule) => {
 
   // skip core recommended
   return jsRule === tsRule ? acc :
-    // disable core rules with replacements
-    jsRules[jsRule] ? {...acc, [jsRule]: 0, [tsRule]: jsRules[tsRule] ?? tsRules[tsRule]} :
     // add new rules normally
-    {...acc, [tsRule]: tsRules[tsRule]};
+    R.isNil(jsRules[jsRule]) ? {...acc, [tsRule]: tsRules[tsRule]} :
+    // disable core rules with replacements
+    {
+      ...acc,
+      [jsRule]: 0,
+      [tsRule]: jsRules[jsRule] ?? tsRules[tsRule],
+    };
 }, {});
 
 // export
@@ -52,9 +58,9 @@ module.exports = {
     // core - recommended enable
 
     'no-var': 2,
-    'prefer-const': 2,
-    'prefer-rest-params': 2,
-    'prefer-spread': 2,
+    'prefer-const': 1,
+    'prefer-rest-params': 1,
+    'prefer-spread': 1,
 
     // core - replacements
 
