@@ -148,7 +148,7 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 2,
     '@typescript-eslint/member-ordering': 2,
     '@typescript-eslint/method-signature-style': 2,
-    '@typescript-eslint/naming-convention': [2, namingOpts],
+    '@typescript-eslint/naming-convention': [2, ...namingOpts],
     '@typescript-eslint/no-base-to-string': 2,
     '@typescript-eslint/no-confusing-non-null-assertion': 2,
     '@typescript-eslint/no-confusing-void-expression': 2,
