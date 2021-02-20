@@ -163,7 +163,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
     '@typescript-eslint/no-unnecessary-type-constraint': 2,
-    '@typescript-eslint/no-unsafe-assignment': 2,
+    '@typescript-eslint/no-unsafe-assignment': 0,
     '@typescript-eslint/no-unsafe-call': 2,
     '@typescript-eslint/no-unsafe-member-access': 2,
     '@typescript-eslint/no-unsafe-return': 2,
