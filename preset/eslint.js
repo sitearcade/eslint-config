@@ -302,7 +302,7 @@ module.exports = {
     'space-in-parens': [1, 'never'],
     'space-infix-ops': [1, {int32Hint: true}],
     'space-unary-ops': [1, {words: true, nonwords: false}],
-    'spaced-comment': [1, 'always', {block: {balanced: true}}],
+    'spaced-comment': [1, 'always', {markers: ['/'], block: {balanced: true}}],
     'strict': [2, 'never'],
     'switch-colon-spacing': 1,
     'symbol-description': 1,

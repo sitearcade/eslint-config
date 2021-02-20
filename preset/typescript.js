@@ -39,16 +39,9 @@ const namingOpts = [
 const extendRules = (tsRules) => Object.keys(tsRules).reduce((acc, tsRule) => {
   const jsRule = tsRule.replace('@typescript-eslint/', '');
 
-  // skip core recommended
-  return jsRule === tsRule ? acc :
-    // add new rules normally
+  return jsRule === tsRule ? {...acc, [tsRule]: tsRules[tsRule]} :
     R.isNil(jsRules[jsRule]) ? {...acc, [tsRule]: tsRules[tsRule]} :
-    // disable core rules with replacements
-    {
-      ...acc,
-      [jsRule]: 0,
-      [tsRule]: jsRules[jsRule] ?? tsRules[tsRule],
-    };
+    {...acc, [jsRule]: 0, [tsRule]: jsRules[jsRule] ?? tsRules[tsRule]};
 }, {});
 
 // export
@@ -64,7 +57,7 @@ module.exports = {
   },
 
   rules: extendRules({
-    // core - recommended disable
+    // disable core
 
     'constructor-super': 0,
     'getter-return': 0,
@@ -85,15 +78,7 @@ module.exports = {
     'no-unsafe-negation': 0,
     'valid-typeof': 0,
 
-    // core - recommended enable
-
-    'no-var': 2,
-    'prefer-const': 1,
-    'prefer-rest-params': 1,
-    'prefer-spread': 1,
-    'spaced-comment': [2, 'always', {markers: ['/']}],
-
-    // core - replacements
+    // replace core
 
     '@typescript-eslint/brace-style': 2,
     '@typescript-eslint/comma-dangle': 2,
@@ -128,7 +113,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 2,
     '@typescript-eslint/space-infix-ops': 2,
 
-    // typescript
+    // unique
 
     '@typescript-eslint/adjacent-overload-signatures': 1,
     '@typescript-eslint/array-type': [1, {default: 'array-simple'}],
