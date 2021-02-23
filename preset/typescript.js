@@ -187,7 +187,7 @@ module.exports = {
     '@typescript-eslint/promise-function-async': 2,
     '@typescript-eslint/require-array-sort-compare': 2,
     '@typescript-eslint/restrict-plus-operands': 2,
-    '@typescript-eslint/restrict-template-expressions': 2,
+    '@typescript-eslint/restrict-template-expressions': 0,
     '@typescript-eslint/return-await': 2,
     '@typescript-eslint/sort-type-union-intersection-members': 2,
     '@typescript-eslint/strict-boolean-expressions': 0,
