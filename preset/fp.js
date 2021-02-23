@@ -1,15 +1,3 @@
-// vars
-
-const allowedObjects = [
-  '_',
-  'R',
-  'form',
-  'router',
-  'Router',
-  'git',
-  'control',
-];
-
 // export
 
 module.exports = {
@@ -23,8 +11,8 @@ module.exports = {
     'fp/no-get-set': 1,
     'fp/no-let': 0,
     'fp/no-loops': 1,
-    'fp/no-mutating-assign': 1,
-    'fp/no-mutating-methods': [1, {allowedObjects}],
+    'fp/no-mutating-assign': 0,
+    'fp/no-mutating-methods': 0,
     'fp/no-mutation': 0,
     'fp/no-nil': 0,
     'fp/no-proxy': 1,

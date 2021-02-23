@@ -190,7 +190,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 2,
     '@typescript-eslint/return-await': 2,
     '@typescript-eslint/sort-type-union-intersection-members': 2,
-    '@typescript-eslint/strict-boolean-expressions': 2,
+    '@typescript-eslint/strict-boolean-expressions': 0,
     '@typescript-eslint/switch-exhaustiveness-check': 2,
     '@typescript-eslint/triple-slash-reference': 2,
     '@typescript-eslint/type-annotation-spacing': 2,
