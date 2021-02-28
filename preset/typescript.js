@@ -127,7 +127,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': 2,
     '@typescript-eslint/consistent-type-imports': 2,
     '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/explicit-member-accessibility': 2,
+    '@typescript-eslint/explicit-member-accessibility': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/lines-between-class-members': 2,
     '@typescript-eslint/member-delimiter-style': 2,
