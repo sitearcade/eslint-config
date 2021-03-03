@@ -1,6 +1,6 @@
 {
   "name": "@sitearcade/eslint-config",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "SiteArcade's eslint configs.",
   "license": "MIT",
   "homepage": "https://www.sitearcade.com",
