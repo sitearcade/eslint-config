@@ -165,7 +165,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-constraint': 2,
     '@typescript-eslint/no-unsafe-assignment': 0,
     '@typescript-eslint/no-unsafe-call': 0,
-    '@typescript-eslint/no-unsafe-member-access': 2,
+    '@typescript-eslint/no-unsafe-member-access': 0,
     '@typescript-eslint/no-unsafe-return': 2,
     '@typescript-eslint/no-var-requires': 2,
     '@typescript-eslint/non-nullable-type-assertion-style': 2,
