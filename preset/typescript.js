@@ -144,7 +144,7 @@ module.exports = {
     '@typescript-eslint/no-extraneous-class': 2,
     '@typescript-eslint/no-floating-promises': 2,
     '@typescript-eslint/no-for-in-array': 2,
-    '@typescript-eslint/no-implicit-any-catch': 2,
+    '@typescript-eslint/no-implicit-any-catch': 0,
     '@typescript-eslint/no-inferrable-types': 2,
     '@typescript-eslint/no-invalid-this': 2,
     '@typescript-eslint/no-invalid-void-type': 2,
