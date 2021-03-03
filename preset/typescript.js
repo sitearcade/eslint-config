@@ -158,7 +158,7 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 2,
     '@typescript-eslint/no-type-alias': 0,
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 2,
-    '@typescript-eslint/no-unnecessary-condition': 2,
+    '@typescript-eslint/no-unnecessary-condition': 0,
     '@typescript-eslint/no-unnecessary-qualifier': 2,
     '@typescript-eslint/no-unnecessary-type-arguments': 2,
     '@typescript-eslint/no-unnecessary-type-assertion': 2,
