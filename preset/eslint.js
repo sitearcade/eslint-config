@@ -108,7 +108,7 @@ module.exports = {
     'linebreak-style': 1,
     'lines-around-comment': [1, {afterBlockComment: true}],
     'lines-between-class-members': [1, 'always', {exceptAfterSingleLine: true}],
-    'max-classes-per-file': [1, 1],
+    'max-classes-per-file': 0,
     'max-depth': [1, {max: 10}],
     'max-len': 0,
     'max-lines': [1, {max: 1000}],
