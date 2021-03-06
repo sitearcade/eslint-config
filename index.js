@@ -30,15 +30,15 @@ module.exports = {
   rules: {},
 
   overrides: [
-    {
-      files: ['**/*.{ts,tsx}'],
+    // {
+    //   files: ['**/*.{ts,tsx}'],
 
-      extends: ['./preset/typescript.js'].map((loc) => path.resolve(__dirname, loc)),
+    //   extends: ['./preset/typescript.js'].map((loc) => path.resolve(__dirname, loc)),
 
-      rules: {
-        'import/unambiguous': 0,
-      },
-    },
+    //   rules: {
+    //     'import/unambiguous': 0,
+    //   },
+    // },
     {
       files: ['**/*.test.{js,ts,jsx,tsx,mjs}'],
 
