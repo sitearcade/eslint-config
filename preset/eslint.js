@@ -210,7 +210,7 @@ module.exports = {
     'no-process-exit': 1,
     'no-proto': 2,
     'no-prototype-builtins': 0,
-    'no-redeclare': [2, {builtinGlobals: true}],
+    'no-redeclare': [1, {builtinGlobals: true}],
     'no-regex-spaces': 2,
     'no-restricted-globals': 0,
     'no-restricted-imports': 0,
