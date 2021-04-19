@@ -1,12 +1,3 @@
-// import
-
-const path = require('path');
-
-const find = require('find-config');
-const globby = require('globby');
-
-const R = require('ramda');
-
 // vars
 
 const extOpts = {
@@ -47,45 +38,18 @@ const orderOpts = {
   'pathGroupsExcludedImportTypes': ['builtin'],
 };
 
-// config
-
-const lernaDir = path.parse(find('lerna.json') || '').dir;
-
-const lernaParents = R.pipe(
-  find.require,
-  R.propOr([], 'packages'),
-  // lists all packages...
-  R.map((loc) => globby.sync(loc, {
-    cwd: lernaDir,
-    onlyDirectories: true,
-    expandDirectories: false,
-  })),
-  R.flatten,
-  R.map((loc) => path.resolve(lernaDir, loc)),
-  // reduces down to parent directories...
-  R.map((loc) => loc.replace(/(\/|^)[^/]+$/, '')),
-  R.uniq,
-)('lerna.json');
-
 // export
 
 module.exports = {
   plugins: ['import'],
 
   settings: {
+    'import/core-modules': ['electron'],
     'import/resolver': {
-      'node': {
+      node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
         moduleDirectory: ['node_modules', '.'],
       },
-      'eslint-import-resolver-lerna': {
-        packages: lernaParents,
-      },
-    },
-    'import/core-modules': ['electron'],
-    'import/ignore': [/\.es\.js$/],
-    'import/cache': {
-      lifetime: 15,
     },
   },
 
@@ -98,8 +62,8 @@ module.exports = {
     'import/first': [1, 'absolute-first'],
     'import/group-exports': 0,
     'import/max-dependencies': 0,
-    // 'import/named': 2,
-    // 'import/namespace': [2, {allowComputed: true}],
+    'import/named': 0,
+    'import/namespace': 0,
     'import/newline-after-import': 1,
     'import/no-absolute-path': 0,
     'import/no-amd': 2,
@@ -107,7 +71,7 @@ module.exports = {
     'import/no-commonjs': 0,
     'import/no-cycle': 2,
     'import/no-default-export': 0,
-    // 'import/no-deprecated': 1,
+    'import/no-deprecated': 1,
     'import/no-duplicates': 1,
     'import/no-dynamic-require': 0,
     'import/no-extraneous-dependencies': 2,
@@ -130,13 +94,4 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/unambiguous': 1,
   },
-
-  overrides: [
-    {
-      files: ['*.story.{js,mdx}'],
-      rules: {
-        'import/no-extraneous-dependencies': 0,
-      },
-    },
-  ],
 };
