@@ -179,7 +179,7 @@ module.exports = {
     // '@typescript-eslint/no-unsafe-member-access': 0,
     // '@typescript-eslint/no-unsafe-return': 1,
     // '@typescript-eslint/no-var-requires': 1,
-    '@typescript-eslint/non-nullable-type-assertion-style': 1,
+    '@typescript-eslint/non-nullable-type-assertion-style': 0,
     // '@typescript-eslint/prefer-as-const': 1,
     // '@typescript-eslint/prefer-enum-initializers': 1,
     // '@typescript-eslint/prefer-for-of': 1,

@@ -14,7 +14,7 @@ module.exports = {
     'promise/no-promise-in-callback': 1,
     'promise/no-return-in-finally': 2,
     'promise/no-return-wrap': [2, {allowReject: true}],
-    'promise/param-names': 2,
+    'promise/param-names': 1,
     'promise/prefer-await-to-callbacks': 0,
     'promise/prefer-await-to-then': 0,
     'promise/valid-params': 2,
