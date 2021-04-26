@@ -67,6 +67,16 @@ module.exports = {
       ]),
     },
 
+    // cypress
+    {
+      files: ['**/*.spec.{js,jsx,ts,tsx,mjs}'],
+
+      extends: resolvePaths([
+        './preset/cypress.js',
+        './preset/chai.js',
+      ]),
+    },
+
     // storybook
     {
       files: ['**/*.story.{js,jsx,ts,tsx,mjs}'],
