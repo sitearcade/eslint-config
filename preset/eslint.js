@@ -53,7 +53,7 @@ module.exports = {
 
   rules: {
     'accessor-pairs': 0,
-    'array-bracket-newline': [1, {multiline: true}],
+    'array-bracket-newline': [1, 'consistent'],
     'array-bracket-spacing': [1, 'never'],
     'array-callback-return': [1, {allowImplicit: true}],
     'array-element-newline': [1, 'consistent'],
