@@ -10,7 +10,7 @@ module.exports = {
     'fp/no-events': 1,
     'fp/no-get-set': 1,
     'fp/no-let': 0,
-    'fp/no-loops': 1,
+    'fp/no-loops': 0,
     'fp/no-mutating-assign': 0,
     'fp/no-mutating-methods': 0,
     'fp/no-mutation': 0,
