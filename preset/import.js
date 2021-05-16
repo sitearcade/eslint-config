@@ -26,7 +26,6 @@ const orderOpts = {
     'parent',
     'sibling',
     'index',
-    'type',
     'unknown',
   ],
 };
