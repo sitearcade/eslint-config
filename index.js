@@ -28,7 +28,6 @@ module.exports = {
     './preset/ramda.js',
     './preset/react-hooks.js',
     './preset/react.js',
-    './preset/styled-components.js',
   ]),
 
   rules: {},
