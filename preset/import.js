@@ -26,16 +26,9 @@ const orderOpts = {
     'parent',
     'sibling',
     'index',
+    'type',
     'unknown',
   ],
-  'pathGroups': [
-    {
-      pattern: '@arc/**',
-      group: 'external',
-      position: 'after',
-    },
-  ],
-  'pathGroupsExcludedImportTypes': ['builtin'],
 };
 
 // export
