@@ -57,6 +57,13 @@ module.exports = {
       },
     },
 
+    // yaml
+    {
+      files: ['**/*.{yaml,yml}'],
+      parser: 'yaml-eslint-parser',
+      extends: resolvePaths(['./preset/yaml.js']),
+    },
+
     // jest
     {
       files: ['**/*.test.{js,jsx,ts,tsx,mjs}'],

@@ -23,11 +23,11 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.14.6",
-    "@babel/eslint-parser": "^7.14.5",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
+    "@babel/eslint-parser": "^7.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-import-resolver-lerna": "^2.0.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-babel": "^5.3.1",
@@ -44,15 +44,17 @@
     "eslint-plugin-ramda": "^3.0.0-beta.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "typescript": "^4.3.4"
+    "eslint-plugin-yml": "^0.9.0",
+    "typescript": "^4.3.4",
+    "yaml-eslint-parser": "^0.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@babel/eslint-parser": "^7.14.5",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
+    "@babel/eslint-parser": "^7.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-import-resolver-lerna": "^2.0.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-babel": "^5.3.1",
@@ -69,7 +71,9 @@
     "eslint-plugin-ramda": "^3.0.0-beta.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "typescript": "^4.3.4"
+    "eslint-plugin-yml": "^0.9.0",
+    "typescript": "^4.3.4",
+    "yaml-eslint-parser": "^0.3.2"
   },
   "eslintConfig": {
     "extends": [
