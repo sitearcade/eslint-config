@@ -67,7 +67,7 @@ module.exports = {
     'import/export': 1,
     'import/exports-last': 0,
     'import/extensions': [1, extOpts],
-    'import/first': [1, 'absolute-first'],
+    'import/first': 1,
     'import/group-exports': 0,
     'import/max-dependencies': 0,
     'import/named': 0,
