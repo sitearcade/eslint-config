@@ -15,19 +15,35 @@ const anonOpts = {
 };
 
 const orderOpts = {
+  'pathGroupsExcludedImportTypes': ['builtin'],
   'newlines-between': 'always',
-  'alphabetize': {
-    order: 'asc',
-  },
+  'alphabetize': {order: 'asc'},
+
   'groups': [
+    'type',
     'builtin',
     'external',
     'internal',
     'parent',
     'sibling',
     'index',
+    'object',
     'unknown',
   ],
+
+  'pathGroups': [{
+    pattern: '@secretarcade/**',
+    group: 'internal',
+    position: 'before',
+  }, {
+    pattern: '@sitearcade/**',
+    group: 'internal',
+    position: 'before',
+  }, {
+    pattern: '@arc/**',
+    group: 'internal',
+    position: 'before',
+  }],
 };
 
 // export
@@ -37,11 +53,10 @@ module.exports = {
 
   settings: {
     'import/core-modules': ['electron'],
-    // 'import/internal-regex': /^@arc\//,
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs'],
-        moduleDirectory: ['../../node_modules', 'node_modules', '.'],
+        moduleDirectory: ['node_modules', '.'],
       },
     },
   },
