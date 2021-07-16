@@ -37,10 +37,11 @@ module.exports = {
 
   settings: {
     'import/core-modules': ['electron'],
+    // 'import/internal-regex': /^@arc\//,
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
-        moduleDirectory: ['node_modules', '.'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs'],
+        moduleDirectory: ['../../node_modules', 'node_modules', '.'],
       },
     },
   },
